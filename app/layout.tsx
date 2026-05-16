@@ -15,38 +15,41 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: 'AI Workshops & Design — Matus Kalis',
+  title: 'Matus Kalis — Design & AI Consultant',
   description:
-    'Half-day AI workshops that turn your team from AI-curious to AI-fluent. Live demos, real workflows, zero slides. Based in Bratislava, working across Europe.',
-  metadataBase: new URL('https://ai.matuskalis.com'),
+    'I help companies understand and use AI through hands-on workshops, and deliver sharp UI/UX design with fixed scope and pricing. Based in Bratislava, Slovakia.',
+  metadataBase: new URL('https://matuskalis.com'),
   openGraph: {
-    title: 'AI Workshops & Design — Matus Kalis',
+    title: 'Matus Kalis — Design & AI Consultant',
     description:
-      'Half-day AI workshops that turn your team from AI-curious to AI-fluent. Live demos, real workflows, zero slides.',
-    url: 'https://ai.matuskalis.com',
-    siteName: 'Matus Kalis — AI Workshops',
+      'I help companies understand and use AI through hands-on workshops, and deliver sharp UI/UX design with fixed scope and pricing.',
+    url: 'https://matuskalis.com',
+    siteName: 'Matus Kalis',
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AI Workshops & Design — Matus Kalis',
+    title: 'Matus Kalis — Design & AI Consultant',
     description:
-      'Half-day AI workshops that turn your team from AI-curious to AI-fluent. Live demos, real workflows, zero slides.',
+      'I help companies understand and use AI through hands-on workshops, and deliver sharp UI/UX design with fixed scope and pricing.',
   },
   robots: {
     index: true,
     follow: true,
+  },
+  other: {
+    'theme-color': '#141416',
   },
 };
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  name: 'Matus Kalis — AI Workshops & Design',
+  name: 'Matus Kalis — Design & AI Consultant',
   description:
-    'Half-day AI workshops and fixed-price UI/UX design for companies that want to move faster with AI.',
-  url: 'https://ai.matuskalis.com',
+    'AI workshops and UI/UX design services for companies that want to move faster.',
+  url: 'https://matuskalis.com',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Bratislava',

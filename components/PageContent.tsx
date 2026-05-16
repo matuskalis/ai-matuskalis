@@ -332,20 +332,20 @@ export default function PageContent() {
 
             <div className="mt-14 grid gap-14 lg:grid-cols-2">
               <form
-                action="https://formsubmit.co/matus@matuskalis.com"
+                action="https://formsubmit.co/m3kalis@gmail.com"
                 method="POST"
                 className="space-y-6"
               >
                 <input
                   type="hidden"
                   name="_subject"
-                  value="New inquiry from matuskalis.com"
+                  value="New inquiry from ai.matuskalis.com"
                 />
                 <input type="hidden" name="_captcha" value="false" />
                 <input
                   type="hidden"
                   name="_next"
-                  value="https://matuskalis.com"
+                  value="https://ai.matuskalis.com"
                 />
                 <input
                   type="text"
@@ -429,10 +429,10 @@ export default function PageContent() {
                 <div>
                   <p className="text-sm font-medium text-foreground">Email</p>
                   <a
-                    href="mailto:matus@matuskalis.com"
+                    href="mailto:m3kalis@gmail.com"
                     className="mt-1 block text-lg text-muted transition-colors hover:text-accent-light"
                   >
-                    matus@matuskalis.com
+                    m3kalis@gmail.com
                   </a>
                 </div>
                 <div>

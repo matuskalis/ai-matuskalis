@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ai.matuskalis.com/sitemap.xml
+Sitemap: https://matuskalis.com/sitemap.xml
