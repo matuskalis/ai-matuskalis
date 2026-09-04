@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Workshops & Design
 
-## Getting Started
+A one-page microsite for the workshop and design side of my work: hands-on AI
+sessions for teams, plus UI/UX design delivered with fixed scope and pricing.
 
-First, run the development server:
+**Live:** https://ai-matuskalis.vercel.app
+
+## What is here
+
+A single route rendering one long page: hero, what the workshops cover, how a
+design engagement runs, and a contact section. `components/PageContent.tsx`
+holds the whole page; `components/Navigation.tsx` is the sticky bar.
+
+Two details worth knowing before editing:
+
+- Section reveals use one `IntersectionObserver` set up in `useFadeIn`, which
+  watches every `.fade-in` element and unobserves each one after it fires.
+- The two blurred accent blobs in the hero are decorative and
+  `pointer-events-none`; they animate via the `animate-drift` utilities in
+  `globals.css`.
+
+## Stack
+
+- Next.js 16 (App Router) and React 19
+- TypeScript
+- Tailwind CSS v4
+- Inter and Space Grotesk via `next/font`
+- Deployed on Vercel
+
+## Running locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+No environment variables and no backend. The page is static.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Note on canonical URLs
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`app/layout.tsx` and `public/sitemap.xml` still declare `matuskalis.com` as the
+canonical host, which is a different site. Decide which domain this page should
+own before doing anything SEO-sensitive with it.
